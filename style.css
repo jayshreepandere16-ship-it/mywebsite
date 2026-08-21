@@ -528,6 +528,7 @@ font-size:32px;
 </a>
 
 /* Floating Back to Home Button */
+
 .floating-home-btn {
     position: fixed;
     right: 20px;
