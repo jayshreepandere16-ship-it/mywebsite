@@ -545,3 +545,7 @@ font-size:32px;
     z-index: 99999;
     cursor: pointer;
 }
+
+.floating-home-btn:hover {
+    transform: scale(1.1);
+}
