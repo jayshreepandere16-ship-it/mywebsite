@@ -85,3 +85,23 @@ document.querySelectorAll(".btn").forEach(button=>{
     });
 
 });
+
+// Form Submission Handler
+const contactForm = document.getElementById("contact-form");
+
+if(contactForm){
+    contactForm.addEventListener("submit", function(e){
+        e.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        
+        const whatsappMessage = `Hello, my name is ${name}. Email: ${email}. Message: ${message}`;
+        const whatsappUrl = `https://wa.me/917715819994?text=${encodeURIComponent(whatsappMessage)}`;
+        
+        window.open(whatsappUrl, '_blank');
+        contactForm.reset();
+        alert("Thank you! Your message has been sent via WhatsApp.");
+    });
+}
