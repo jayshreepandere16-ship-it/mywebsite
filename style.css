@@ -526,4 +526,88 @@ font-size:32px;
 <a href="https://wa.me/917715819994" target="_blank">
     💬 Chat on WhatsApp
 </a>
+/* =========================================================
+   OUR PRODUCTS BANNER
+   ========================================================= */
+
+.our-products-banner-section {
+    width: 100%;
+    padding: 18px 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.our-products-banner {
+    position: relative;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+.our-products-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* SHOP NOW BUTTON */
+
+.our-products-banner-btn {
+    position: absolute;
+
+    left: 50%;
+    bottom: 22px;
+
+    transform: translateX(-50%);
+
+    padding: 11px 25px;
+
+    border-radius: 8px;
+
+    background: #126b38;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+
+    transition: 0.25s ease;
+}
+
+.our-products-banner-btn:hover {
+    background: #0d542c;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .our-products-banner-section {
+        padding: 12px;
+    }
+
+    .our-products-banner {
+        border-radius: 9px;
+    }
+
+    .our-products-banner-btn {
+        bottom: 10px;
+
+        padding: 7px 15px;
+
+        font-size: 11px;
+    }
+
+}
 
