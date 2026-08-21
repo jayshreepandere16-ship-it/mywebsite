@@ -526,4 +526,28 @@ font-size:32px;
 <a href="https://wa.me/917715819994" target="_blank">
     💬 Chat on WhatsApp
 </a>
+/* Floating Back to Home Button */
+.floating-home-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    width: 52px;
+    height: 52px;
+    background: #b7d98a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
 
+.floating-home-btn:hover {
+    transform: scale(1.1);
+    background: #9fc56f;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
