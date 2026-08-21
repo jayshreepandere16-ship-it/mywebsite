@@ -528,28 +528,42 @@ font-size:32px;
 </a>
 
 /* Floating Back to Home Button */
-
 .floating-home-btn {
     position: fixed;
     right: 20px;
-    bottom: 25px;
-    width: 52px;
-    height: 52px;
-    background: #b7d98a;
-    color: #ffffff;
-    border-radius: 50%;
+    bottom: 20px;
+    z-index: 99999;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 6px;
+
+    padding: 11px 16px;
+    border-radius: 30px;
+
+    background: #b8d98b;
+    color: #1f3d1f;
+
+    font-size: 15px;
+    font-weight: 700;
     text-decoration: none;
-    font-size: 25px;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-    transition: all 0.3s ease;
+
+    transition: all 0.25s ease;
 }
 
 .floating-home-btn:hover {
-    transform: scale(1.1);
-    background: #9fc56f;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.30);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .floating-home-btn {
+        right: 12px;
+        bottom: 12px;
+        padding: 9px 13px;
+        font-size: 13px;
+    }
 }
