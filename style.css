@@ -527,43 +527,27 @@ font-size:32px;
     💬 Chat on WhatsApp
 </a>
 
-/* Floating Back to Home Button */
 .floating-home-btn {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 99999;
-
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: #b7d98c;
+    color: #333;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 6px;
-
-    padding: 11px 16px;
-    border-radius: 30px;
-
-    background: #b8d98b;
-    color: #1f3d1f;
-
-    font-size: 15px;
-    font-weight: 700;
+    justify-content: center;
     text-decoration: none;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-
-    transition: all 0.25s ease;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: 0.3s;
 }
 
 .floating-home-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.30);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .floating-home-btn {
-        right: 12px;
-        bottom: 12px;
-        padding: 9px 13px;
-        font-size: 13px;
-    }
+    transform: scale(1.1);
+    background: #a5cc75;
 }
