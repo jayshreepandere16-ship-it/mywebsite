@@ -541,13 +541,7 @@ font-size:32px;
     justify-content: center;
     text-decoration: none;
     font-size: 24px;
-    font-weight: bold;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    z-index: 9999;
-    transition: 0.3s;
-}
-
-.floating-home-btn:hover {
-    transform: scale(1.1);
-    background: #a5cc75;
+    z-index: 99999;
+    cursor: pointer;
 }
